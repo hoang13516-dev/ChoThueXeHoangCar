@@ -1,0 +1,77 @@
+﻿  <!-- ========== FORM SECTION ========== -->
+  <section id="form-section" class="section section-alt page-inner-start">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="badge" id="form-badge">Contact</span>
+        <h2 id="form-title">Đặt Lịch Tư Vấn Miễn Phí</h2>
+        <p id="form-subtitle">Điền thông tin bên dưới, chuyên viên sẽ liên hệ trong 30 phút</p>
+      </div>
+
+      <div class="form-wrapper fade-up">
+        <form id="consultation-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" id="fl-name">Họ và tên <span class="required">*</span></label>
+              <input class="form-input" type="text" id="inp-name" placeholder="Nguyễn Văn A" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" id="fl-phone">Số điện thoại <span class="required">*</span></label>
+              <input class="form-input" type="tel" id="inp-phone" placeholder="09xx xxx xxx" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" id="fl-email">Email</label>
+              <input class="form-input" type="email" id="inp-email" placeholder="email@example.com">
+            </div>
+            <div class="form-group">
+              <label class="form-label" id="fl-region">Khu vực</label>
+              <select class="form-select" id="sel-region">
+                <option disabled selected>Chọn khu vực</option>
+                <option id="opt-north" value="north">Miền Bắc (Hà Nội)</option>
+                <option id="opt-central" value="central">Miền Trung (Đà Nẵng, Nha Trang)</option>
+                <option id="opt-south" value="south">Miền Nam (TP.HCM)</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" id="fl-model">Mô hình thuê <span class="required">*</span></label>
+              <select class="form-select" id="sel-model">
+                <option disabled selected>Chọn mô hình</option>
+                <option id="opt-long" value="long-term">Dài hạn (Doanh nghiệp)</option>
+                <option id="opt-short" value="short-term">Ngắn hạn (Cá nhân)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" id="fl-car">Dòng xe quan tâm</label>
+              <select class="form-select" id="sel-car">
+                <option disabled selected>Chọn dòng xe</option>
+                <option id="opt-sedan" value="sedan">Sedan</option>
+                <option id="opt-suv" value="suv">SUV</option>
+                <option id="opt-mpv" value="mpv">MPV (7 chỗ)</option>
+                <option id="opt-van" value="van">Van (16 chỗ)</option>
+                <option id="opt-luxury" value="luxury">Xe sang</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group full" style="margin-bottom:20px">
+            <label class="form-label" id="fl-time">Thời gian thuê dự kiến</label>
+            <input class="form-input" type="text" id="inp-time" placeholder="VD: 3 tháng, 1 năm...">
+          </div>
+          <div class="form-group full" style="margin-bottom:20px">
+            <label class="form-label" id="fl-note">Yêu cầu khác</label>
+            <textarea class="form-textarea" id="inp-note" placeholder="Nhập yêu cầu đặc biệt..."></textarea>
+          </div>
+          <div class="form-checkbox">
+            <input type="checkbox" id="inp-agree">
+            <label for="inp-agree" id="agree-text">Tôi đồng ý với Chính sách bảo vệ dữ liệu cá nhân</label>
+          </div>
+          <button type="submit" class="form-submit">
+            <span id="submit-text">Gửi Yêu Cầu Tư Vấn</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
