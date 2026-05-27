@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hoang Car - Dịch Vụ Thuê Xe Chuyên Nghiệp</title>
+  <meta name="description" content="Hoang Car cung cấp dịch vụ thuê xe dài hạn và ngắn hạn chuyên nghiệp. Hỗ trợ đa ngôn ngữ, bảo hiểm toàn diện, xe mới dưới 3 năm">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="is-loading page-home-active">
+
+  <!-- ========== HEADER ========== -->
+  <header class="header">
+    <div class="container">
+      <div class="logo" data-page="home" role="button" tabindex="0" aria-label="Trang chủ">
+        <div class="logo-icon">
+          <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.5-1-1-1.8-1.2m-3 6V7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2zm-6-4h.01"/></svg>
+        </div>
+        <div class="logo-text">HOANG <span>CAR</span></div>
+      </div>
+
+      <nav class="nav">
+        <a href="#home" data-page="home" id="nav-home" class="nav-link active">Trang Chủ</a>
+        <a href="#corporate" data-page="corporate" id="nav-corp" class="nav-link">Thuê Xe Doanh Nghiệp</a>
+        <a href="#short-term" data-page="short-term" id="nav-short" class="nav-link">Thuê Xe Ngắn Hạn</a>
+        <a href="#practice" data-page="practice" id="nav-practice" class="nav-link">Bài Thực Hành</a>
+        <a href="#contact" data-page="contact" id="nav-contact" class="nav-link">Liên Hệ</a>
+        <div class="lang-switch">
+          <button class="lang-btn active" data-lang="vi">VI</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+          <button class="lang-btn" data-lang="kr">KR</button>
+        </div>
+        <a href="tel:0345678910" class="header-cta">
+          <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.63A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          034 567 8910
+        </a>
+      </nav>
+
+      <button class="mobile-toggle" type="button" aria-label="Mở menu" aria-expanded="false" aria-controls="mobile-nav">
+        <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="20" y2="18"/></svg>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobile-nav">
+      <a href="#home" data-page="home" id="nav-mobile-home" class="nav-link active">Trang Chủ</a>
+      <a href="#corporate" data-page="corporate" id="nav-mobile-corp" class="nav-link">Thuê Xe Doanh Nghiệp</a>
+      <a href="#short-term" data-page="short-term" id="nav-mobile-short" class="nav-link">Thuê Xe Ngắn Hạn</a>
+      <a href="#practice" data-page="practice" id="nav-mobile-practice" class="nav-link">Bài Thực Hành</a>
+      <a href="#contact" data-page="contact" id="nav-mobile-contact" class="nav-link">Liên Hệ</a>
+    </div>
+  </header>
+
+  <!-- ========== PAGES ========== -->
+  <main id="app-pages" class="app-pages" aria-live="polite">
+    
+    <!-- HOME PAGE -->
+    <div class="page-view active" id="page-home" data-page="home">
+      <!-- HERO SECTION -->
+      <section id="hero" class="hero">
+        <div class="hero-bg" style="background-image:url('images/hero-bg.png')"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-circle1"></div>
+        <div class="hero-circle2"></div>
+
+        <div class="hero-content">
+          <span class="badge" id="hero-badge">Dịch vụ thuê xe hàng đầu Việt Nam</span>
+
+          <h1 id="hero-title">Hoang Car
+            <span id="hero-title-sub">Premium Car Rental</span>
+          </h1>
+
+          <p class="subtitle" id="hero-subtitle">Đối tác vận hành đáng tin cậy cho doanh nghiệp và cá nhân</p>
+
+          <div class="hero-tags">
+            <span class="hero-tag hero-tag-1">
+              <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              Xe mới dưới 3 năm
+            </span>
+            <span class="hero-tag hero-tag-2">
+              <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              Tài xế chuyên nghiệp
+            </span>
+            <span class="hero-tag hero-tag-3">
+              <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              Bảo hiểm toàn diện
+            </span>
+            <span class="hero-tag hero-tag-4">
+              <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              Hỗ trợ đa ngôn ngữ
+            </span>
+          </div>
+
+          <div class="hero-ctas">
+            <a href="#contact" data-page="contact" class="btn btn-red page-link" id="hero-cta">
+              Tư Vấn Ngay
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+            </a>
+            <a href="tel:0345678910" class="hero-phone">
+              <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.63A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              034 567 8910
+              <small id="hero-hotline-label">(24/7 Hotline)</small>
+            </a>
+          </div>
+
+          <div class="stats">
+            <div class="stat"><div class="stat-value stat-1-val">500+</div><div class="stat-label stat-1-label">Xe trong đội</div></div>
+            <div class="stat"><div class="stat-value stat-2-val">50+</div><div class="stat-label stat-2-label">Doanh nghiệp đối tác</div></div>
+            <div class="stat"><div class="stat-value stat-3-val">4</div><div class="stat-label stat-3-label">Chi nhánh toàn quốc</div></div>
+            <div class="stat"><div class="stat-value stat-4-val">24/7</div><div class="stat-label stat-4-label">Hỗ trợ khách hàng</div></div>
+          </div>
+        </div>
+
+        <div class="scroll-indicator">
+          <div class="mouse"><div class="wheel"></div></div>
+        </div>
+      </section>
+
+      <!-- COMPARISON SECTION -->
+      <section id="comparison" class="section">
+        <div class="container">
+          <div class="section-header fade-up">
+            <span class="badge" id="cmp-badge">Comparison</span>
+            <h2 id="cmp-title">So Sánh Dịch Vụ</h2>
+            <p id="cmp-subtitle">Tại sao chọn Hoang Car thay vì taxi thông thường?</p>
+          </div>
+
+          <div class="compare-table fade-up">
+            <table>
+              <thead>
+                <tr>
+                  <th id="th-feat">Tiêu chí</th>
+                  <th id="th-lotte">Hoang Car</th>
+                  <th id="th-taxi">Taxi thông thường</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td class="feat-text">Tài xế đào tạo chuyên nghiệp</td><td><svg class="check" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></td><td></td></tr>
+                <tr><td class="feat-text">Xe mới dưới 3 năm</td><td><svg class="check" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></td><td></td></tr>
+                <tr><td class="feat-text">Hỗ trợ tiếng Hàn</td><td><svg class="check" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></td><td></td></tr>
+                <tr><td class="feat-text">Dùng giờ tuyệt đối</td><td><svg class="check" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></td><td></td></tr>
+                <tr><td class="feat-text">Giá cước định, không phí ẩn</td><td><svg class="check" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></td><td></td></tr>
+                <tr><td class="feat-text">Bảo hiểm toàn diện</td><td><svg class="check" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></td><td></td></tr>
+                <tr><td class="feat-text">Xuất hóa đơn VAT</td><td><svg class="check" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></td><td></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- TESTIMONIALS SECTION -->
+      <section id="testimonials" class="section-alt">
+        <div class="container">
+          <div class="section-header fade-up">
+            <span class="badge" id="test-badge">Testimonials</span>
+            <h2 id="test-title">Khách Hàng Nói Gì Về Chúng Tôi</h2>
+            <p id="test-subtitle">Phản hồi từ các đối tác và khách hàng thực tế</p>
+          </div>
+
+          <div class="testimonials-grid">
+            <div class="testimonial-card fade-up">
+              <div class="stars">
+                <svg class="star-filled" viewBox="0 0 24 24" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg class="star-filled" viewBox="0 0 24 24" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg class="star-filled" viewBox="0 0 24 24" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg class="star-filled" viewBox="0 0 24 24" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg class="star-filled" viewBox="0 0 24 24" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              </div>
+              <blockquote class="test-quote">Hoang Car has been our trusted partner for 3 years. Their multilingual support and transparent billing make fleet management effortless.</blockquote>
+              <div class="testimonial-author">
+                <div class="author-avatar">P</div>
+                <div><div class="author-name test-name">Mr. Park Sung-ho</div><div class="author-title test-title-text">CEO, KTech Vietnam</div></div>
+              </div>
+            </div>
+
+            <div class="testimonial-card fade-up">
+              <div class="stars">
+                <svg class="star-filled" viewBox="0 0 24 24" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg class="star-filled" viewBox="0 0 24 24" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg class="star-filled" viewBox="0 0 24 24" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg class="star-filled" viewBox="0 0 24 24" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg class="star-filled" viewBox="0 0 24 24" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              </div>
+              <blockquote class="test-quote">Chúng tôi sử dụng dịch vụ thuê xe dài hạn cho đội ngũ 50 nhân sự. Xe luôn mới, tài xế chuyên nghiệp và hỗ trợ tiếng Hàn rất tốt.</blockquote>
+              <div class="testimonial-author">
+                <div class="author-avatar">N</div>
+                <div><div class="author-name test-name">Ms. Nguyễn Thị Mai</div><div class="author-title test-title-text">GM Operations, VinaCorp</div></div>
+              </div>
+            </div>
+
+            <div class="testimonial-card fade-up">
+              <div class="stars">
+                <svg class="star-filled" viewBox="0 0 24 24" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg class="star-filled" viewBox="0 0 24 24" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg class="star-filled" viewBox="0 0 24 24" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg class="star-filled" viewBox="0 0 24 24" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg class="star-filled" viewBox="0 0 24 24" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              </div>
+              <blockquote class="test-quote">풀 패키지 서비스를 이용하고 있습니다. 연료, 기사, 차량이 모두 포함되어 있어 운영비 절감에 큰 도움이 됩니다.</blockquote>
+              <div class="testimonial-author">
+                <div class="author-avatar">K</div>
+                <div><div class="author-name test-name">Mr. Kim Jun-hyeok</div><div class="author-title test-title-text">Director, Hanseo Construction</div></div>
+              </div>
+            </div>
+
+            <div class="testimonial-card fade-up">
+              <div class="stars">
+                <svg class="star-filled" viewBox="0 0 24 24" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg class="star-filled" viewBox="0 0 24 24" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg class="star-filled" viewBox="0 0 24 24" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg class="star-filled" viewBox="0 0 24 24" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg class="star-empty" viewBox="0 0 24 24" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              </div>
+              <blockquote class="test-quote">Dịch vụ đưa đón sân bay rất chuyên nghiệp. Tài xế đúng giờ, xe sạch sẽ và giá cả hợp lý.</blockquote>
+              <div class="testimonial-author">
+                <div class="author-avatar">T</div>
+                <div><div class="author-name test-name">Ms. Trần Thu Hà</div><div class="author-title test-title-text">Admin Manager, FDI Solutions</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- CORPORATE PAGE -->
+    <div class="page-view page-view--inner" id="page-corporate" data-page="corporate" aria-hidden="true">
+      <section id="corporate" class="section page-inner-start">
+        <div class="container">
+          <div class="section-header fade-up">
+            <span class="badge" id="corp-badge">Corporate</span>
+            <h2 id="corp-title">Thuê Xe Doanh Nghiệp Dài Hạn</h2>
+            <p id="corp-subtitle">Giải pháp vận hành tối ưu với chi phí hợp lý cho doanh nghiệp của bạn</p>
+          </div>
+
+          <div class="rental-types">
+            <div class="type-card fade-up">
+              <div class="type-icon">
+                <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.5-1-1-1.8-1.2m-3 6V7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2zm-6-4h.01"/></svg>
+              </div>
+              <h3 id="type1-title">Thuê Xe Tự Lái</h3>
+              <p id="type1-desc">Tự do lái xe với đội xe đa dạng, từ sedan đến SUV 7 chỗ.</p>
+            </div>
+            <div class="type-card fade-up">
+              <div class="type-icon">
+                <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87m-4-12a4 4 0 0 1 0 7.75"/></svg>
+              </div>
+              <h3 id="type2-title">Thuê Xe Có Tài Xế</h3>
+              <p id="type2-desc">Tài xế chuyên nghiệp, đào tạo bài bản, am hiểu địa hình.</p>
+            </div>
+            <div class="type-card fade-up">
+              <div class="type-icon">
+                <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 22V12a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4v10"/><rect x="2" y="14" width="20" height="4" rx="2"/></svg>
+              </div>
+              <h3 id="type3-title">Full Package</h3>
+              <p id="type3-desc">Xe + Tài xế + Nhiên liệu — Trọn gói tiết kiệm.</p>
+            </div>
+          </div>
+
+          <div class="benefits-box fade-up">
+            <h3 id="benefits-title">Lợi ích khi chọn Hoang Car</h3>
+            <div class="benefits-grid">
+              <div class="benefit-item"><div class="benefit-icon"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div><span class="benefit-text">Tư vấn đa ngôn ngữ</span></div>
+              <div class="benefit-item"><div class="benefit-icon"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8 15 8 19 12 21 16 19 16 15"/></svg></div><span class="benefit-text">Tối ưu chi phí vận hành</span></div>
+              <div class="benefit-item"><div class="benefit-icon"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><span class="benefit-text">Bảo hiểm toàn diện</span></div>
+              <div class="benefit-item"><div class="benefit-icon"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.5-1-1-1.8-1.2m-3 6V7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2zm-6-4h.01"/></svg></div><span class="benefit-text">Số lượng lớn xe mới</span></div>
+              <div class="benefit-item"><div class="benefit-icon"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg></div><span class="benefit-text">Thanh toán minh bạch GPS</span></div>
+              <div class="benefit-item"><div class="benefit-icon"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg></div><span class="benefit-text">Xuất hóa đơn VAT</span></div>
+              <div class="benefit-item"><div class="benefit-icon"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><span class="benefit-text">Xe thay thế khi bảo trì quá 24h</span></div>
+              <div class="benefit-item"><div class="benefit-icon"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M9 21h6"/><path d="M9 21H7.5a3.5 3.5 0 0 1 0-7h9a3.5 3.5 0 0 1 0 7H15"/></svg></div><span class="benefit-text">Hỗ trợ 24/7</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- SHORT-TERM PAGE -->
+    <div class="page-view page-view--inner" id="page-short-term" data-page="short-term" aria-hidden="true">
+      <section id="short-term" class="section-alt page-inner-start">
+        <div class="container">
+          <div class="section-header fade-up">
+            <span class="badge" id="short-badge">Short-term</span>
+            <h2 id="short-title">Thuê Xe Ngắn Hạn</h2>
+            <p id="short-subtitle">Đưa đón chuyên nghiệp với giá cả minh bạch</p>
+          </div>
+
+          <div class="short-grid">
+            <div class="short-cards">
+              <div class="short-card fade-up">
+                <div class="short-card-icon">
+                  <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-5.2 6c-.4.4-.4 1 0 1.4l.5.2c.5.2 1 .1 1.3-.2l1.8-2 4.3 2.6c.5.3 1.1.4 1.6.2l3-1"/></svg>
+                </div>
+                <div>
+                  <h3 id="s1-title">Đưa Đón Sân Bay</h3>
+                  <p id="s1-desc">Đưa đón tận nơi tại sân bay Nội Bài, Đà Nẵng, Tân Sơn Nhất, Cam Ranh. Tài xế chờ sẵn, xe sạch sẽ, giá niêm yết.</p>
+                </div>
+              </div>
+              <div class="short-card fade-up">
+                <div class="short-card-icon">
+                  <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                </div>
+                <div>
+                  <h3 id="s2-title">Thuê Xe Theo Ngày/Tháng</h3>
+                  <p id="s2-desc">Thuê xe linh hoạt theo ngày hoặc tháng. Phù hợp công tác, du lịch, sự kiện. Đa dạng dòng xe từ 4 đến 16 chỗ.</p>
+                </div>
+              </div>
+            </div>
+            <div class="short-image fade-up">
+              <img src="images/shortterm-rental.png" alt="Short-term rental service">
+              <div class="short-image-badge">
+                <strong class="img-badge-strong">Giá cố định</strong>
+                <small class="img-badge-small">Không phí ẩn</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="fade-up">
+            <h3 class="areas-title" id="areas-title">Khu Vực Hoạt Động</h3>
+            <div class="areas-grid">
+              <div class="area-card">
+                <div class="area-icon"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+                <p id="area-1">Hà Nội</p>
+              </div>
+              <div class="area-card">
+                <div class="area-icon"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+                <p id="area-2">Đà Nẵng</p>
+              </div>
+              <div class="area-card">
+                <div class="area-icon"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+                <p id="area-3">Nha Trang</p>
+              </div>
+              <div class="area-card">
+                <div class="area-icon"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+                <p id="area-4">TP. Hồ Chí Minh</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- PRACTICE PAGE -->
+    <div class="page-view page-view--inner" id="page-practice" data-page="practice" aria-hidden="true">
+      <section id="practice" class="section page-inner-start">
+        <div class="container">
+          <div class="section-header fade-up">
+            <span class="badge" id="practice-badge">Practice</span>
+            <h2 id="practice-title">Bài Thực Hành</h2>
+            <p id="practice-subtitle">Tổng hợp các bài lab HTML, CSS và Javascript — nhấn từng mục để mở bài làm</p>
+          </div>
+
+          <div class="lab-grid">
+            <article class="lab-card fade-up">
+              <h3 class="lab-card-title">Lab01: HTML</h3>
+              <ul class="lab-card-list">
+                <li><a href="../../LabThucHanh/Lab01/Vi_du/index.html">Lab1_3</a></li>
+                <li><a href="../../LabThucHanh/Lab01/lab1_bai4.html">Lab1_4</a></li>
+              </ul>
+              <a href="#" class="lab-card-btn">Xem chi tiết</a>
+            </article>
+
+            <article class="lab-card fade-up">
+              <h3 class="lab-card-title">Lab02: Table &amp; List</h3>
+              <ul class="lab-card-list">
+                <li><a href="../../LabThucHanh/Lab02/Vi_du_Lab01/index.html">Lab2_1</a></li>
+                <li><a href="../../LabThucHanh/Lab02/lab02_khung_table.html">Lab2_2</a></li>
+                <li><a href="../../LabThucHanh/Lab02/lab02_bai3.html">Lab2_3</a></li>
+              </ul>
+              <a href="#" class="lab-card-btn">Xem chi tiết</a>
+            </article>
+
+            <article class="lab-card fade-up">
+              <h3 class="lab-card-title">Lab03: Frame &amp; Form</h3>
+              <ul class="lab-card-list">
+                <li><a href="../../LabThucHanh/Lab03/Vi_du/index.html">Lab3_1</a></li>
+                <li><a href="../../LabThucHanh/Lab03/Vi_du_Lab01/index.html">Lab3_2</a></li>
+                <li><a href="../../LabThucHanh/Lab03/Vi_du_Lab01/lab03_bai3.html">Lab3_3</a></li>
+              </ul>
+              <a href="#" class="lab-card-btn">Xem chi tiết</a>
+            </article>
+
+            <article class="lab-card fade-up">
+              <h3 class="lab-card-title">Lab04: CSS cơ bản</h3>
+              <ul class="lab-card-list">
+                <li><a href="../../LabThucHanh/Lab04/Vi_du/lab04_bai1.html">Lab4_1</a></li>
+                <li><a href="../../LabThucHanh/Lab04/Vi_du/lab04_bai2.html">Lab4_2</a></li>
+                <li><a href="../../LabThucHanh/Lab04/Vi_du/lab04_bai3.html">Lab4_3</a></li>
+              </ul>
+              <a href="#" class="lab-card-btn">Xem chi tiết</a>
+            </article>
+
+            <article class="lab-card fade-up">
+              <h3 class="lab-card-title">Lab05: Các thuộc tính CSS</h3>
+              <ul class="lab-card-list">
+                <li><a href="../../LabThucHanh/Lab05/lab05_bai1.html">Lab5_1</a></li>
+                <li><a href="../../LabThucHanh/Lab05/lab05_bai2.html">Lab5_2</a></li>
+                <li><a href="../../LabThucHanh/Lab05/Bai_3/index.html">Lab5_3</a></li>
+                <li><a href="../../LabThucHanh/Lab05/Bai_3/lab05_bai4.html">Lab5_4</a></li>
+              </ul>
+              <a href="#" class="lab-card-btn">Xem chi tiết</a>
+            </article>
+
+            <article class="lab-card fade-up">
+              <h3 class="lab-card-title">Lab06: Xây dựng layout responsive bằng CSS</h3>
+              <ul class="lab-card-list">
+                <li><a href="../../LabThucHanh/Lab06/lab06_bai1.html">Lab6_1</a></li>
+                <li><a href="../../LabThucHanh/Lab06/Bai_2_Minh_hoa_layout/index.html">Lab6_2</a></li>
+                <li><a href="../../LabThucHanh/Lab06/lab06_bai3.html">Lab6_3</a></li>
+              </ul>
+              <a href="#" class="lab-card-btn">Xem chi tiết</a>
+            </article>
+
+            <article class="lab-card fade-up">
+              <h3 class="lab-card-title">Lab07: Javascript</h3>
+              <ul class="lab-card-list">
+                <li><a href="../../LabThucHanh/Lab07/Vi_du/index.html">Lab7_1</a></li>
+                <li><a href="../../LabThucHanh/Lab07/demo_bai_2/index.html">Lab7_2</a></li>
+              </ul>
+              <a href="#" class="lab-card-btn">Xem chi tiết</a>
+            </article>
+
+            <article class="lab-card fade-up">
+              <h3 class="lab-card-title">Lab08: Javascript nâng cao</h3>
+              <ul class="lab-card-list">
+                <li><a href="../../LabThucHanh/Lab08/lab08_slider.html">Lab8_1</a></li>
+                <li><a href="../../LabThucHanh/Lab08/lab08_slider_auto.html">Lab8_2</a></li>
+                <li><a href="../../LabThucHanh/Lab08/lab08_json.html">Lab8_3</a></li>
+              </ul>
+              <a href="#" class="lab-card-btn">Xem chi tiết</a>
+            </article>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- CONTACT PAGE -->
+    <div class="page-view page-view--inner" id="page-contact" data-page="contact" aria-hidden="true">
+      <section id="form-section" class="section section-alt page-inner-start">
+        <div class="container">
+          <div class="section-header fade-up">
+            <span class="badge" id="form-badge">Contact</span>
+            <h2 id="form-title">Đặt Lịch Tư Vấn Miễn Phí</h2>
+            <p id="form-subtitle">Điền thông tin bên dưới, chuyên viên sẽ liên hệ trong 30 phút</p>
+          </div>
+
+          <div class="form-wrapper fade-up">
+            <form id="consultation-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" id="fl-name">Họ và tên <span class="required">*</span></label>
+                  <input class="form-input" type="text" id="inp-name" placeholder="Nguyễn Văn A" required>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" id="fl-phone">Số điện thoại <span class="required">*</span></label>
+                  <input class="form-input" type="tel" id="inp-phone" placeholder="09xx xxx xxx" required>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" id="fl-email">Email</label>
+                  <input class="form-input" type="email" id="inp-email" placeholder="email@example.com">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" id="fl-region">Khu vực</label>
+                  <select class="form-select" id="sel-region">
+                    <option disabled selected>Chọn khu vực</option>
+                    <option id="opt-north" value="north">Miền Bắc (Hà Nội)</option>
+                    <option id="opt-central" value="central">Miền Trung (Đà Nẵng, Nha Trang)</option>
+                    <option id="opt-south" value="south">Miền Nam (TP.HCM)</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" id="fl-model">Mô hình thuê <span class="required">*</span></label>
+                  <select class="form-select" id="sel-model">
+                    <option disabled selected>Chọn mô hình</option>
+                    <option id="opt-long" value="long-term">Dài hạn (Doanh nghiệp)</option>
+                    <option id="opt-short" value="short-term">Ngắn hạn (Cá nhân)</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" id="fl-car">Dòng xe quan tâm</label>
+                  <select class="form-select" id="sel-car">
+                    <option disabled selected>Chọn dòng xe</option>
+                    <option id="opt-sedan" value="sedan">Sedan</option>
+                    <option id="opt-suv" value="suv">SUV</option>
+                    <option id="opt-mpv" value="mpv">MPV (7 chỗ)</option>
+                    <option id="opt-van" value="van">Van (16 chỗ)</option>
+                    <option id="opt-luxury" value="luxury">Xe sang</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group full" style="margin-bottom:20px">
+                <label class="form-label" id="fl-time">Thời gian thuê dự kiến</label>
+                <input class="form-input" type="text" id="inp-time" placeholder="VD: 3 tháng, 1 năm...">
+              </div>
+              <div class="form-group full" style="margin-bottom:20px">
+                <label class="form-label" id="fl-note">Yêu cầu khác</label>
+                <textarea class="form-textarea" id="inp-note" placeholder="Nhập yêu cầu đặc biệt..."></textarea>
+              </div>
+              <div class="form-checkbox">
+                <input type="checkbox" id="inp-agree">
+                <label for="inp-agree" id="agree-text">Tôi đồng ý với Chính sách bảo vệ dữ liệu cá nhân</label>
+              </div>
+              <button type="submit" class="form-submit">
+                <span id="submit-text">Gửi Yêu Cầu Tư Vấn</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">
+            <div class="logo-icon">
+              <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.5-1-1-1.8-1.2m-3 6V7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2zm-6-4h.01"/></svg>
+            </div>
+            <div class="logo-text">Hoang <span>Car</span></div>
+          </div>
+          <p id="fb-desc">Hoang Car - Đối tác vận hành đáng tin cậy với đội ngũ xe mới, tài xế chuyên nghiệp và dịch vụ 24/7.</p>
+          <div class="footer-social">
+            <a href="tel:0345678910" aria-label="Gọi hotline">
+              <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.63A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </a>
+            <a href="mailto:cskh@hoangcar.vn">
+              <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 id="fb-branches">Chi Nhánh</h4>
+          <div class="footer-branch">
+            <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div>
+              <div class="footer-branch-name">Hà Nội</div>
+              <div class="footer-branch-addr">Tầng 1, 2, Tòa nhà The Sun, Mễ Trì</div>
+              <div class="footer-branch-phone">098 765 4321</div>
+            </div>
+          </div>
+          
+          <div class="footer-branch">
+            <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div>
+              <div class="footer-branch-name">Đà Nẵng</div>
+              <div class="footer-branch-addr">Tầng 6, Indochina Riverside, 74 Bạch Đằng</div>
+              <div class="footer-branch-phone">094 567 8910</div>
+            </div>
+          </div>
+
+          <div class="footer-branch">
+            <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div>
+              <div class="footer-branch-name">Nha Trang</div>
+              <div class="footer-branch-addr">Tầng 3, Vinpearl Resort, Trần Phú</div>
+              <div class="footer-branch-phone">091 234 5678</div>
+            </div>
+          </div>
+
+          <div class="footer-branch">
+            <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div>
+              <div class="footer-branch-name">TP. Hồ Chí Minh</div>
+              <div class="footer-branch-addr">Tòa nhà Paragon, Số 03 Nguyễn Lương Bằng</div>
+              <div class="footer-branch-phone">08 1234 5678</div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h4 id="fb-services">Dịch Vụ</h4>
+          <a href="#corporate" data-page="corporate" class="footer-link page-link" id="fb-corp">Thuê xe doanh nghiệp</a>
+          <a href="#short-term" data-page="short-term" class="footer-link page-link" id="fb-short">Thuê xe ngắn hạn</a>
+          <a href="#short-term" data-page="short-term" class="footer-link page-link" id="fb-airport">Đưa đón sân bay</a>
+        </div>
+
+        <div>
+          <h4 id="fb-legal">Pháp Lý</h4>
+          <a href="#" class="footer-link" data-privacy id="fb-privacy" role="button">Chính sách bảo mật</a>
+          <a href="#" class="footer-link" data-terms id="fb-terms" role="button">Điều khoản sử dụng</a>
+          <div class="footer-contact-box">
+            <small id="fb-email-label">Email</small>
+            <p id="fb-email">cskh@hoangcar.vn</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom" id="fb-copy">© 2026 Hoang Car Vietnam. Tất cả quyền được bảo lưu.</div>
+    </div>
+  </footer>
+
+  <!-- ========== MODALS ========== -->
+  <div id="app-modals">
+    <div class="modal-overlay">
+      <div class="modal">
+        <button class="modal-close">
+          <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+        <div class="modal-content modal-privacy">
+          <h2 id="priv-title">Chính Sách Bảo Vệ Dữ Liệu Cá Nhân</h2>
+          <p class="modal-sub" id="priv-updated">Cập nhật: Tháng 4/2026</p>
+
+          <h4 id="priv-collected">Dữ Liệu Thu Thập</h4>
+          <ul>
+            <li><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span id="pd-1">Thông tin cá nhân (Tên, SĐT, Email)</span></li>
+            <li><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span id="pd-2">Thông tin doanh nghiệp</span></li>
+            <li><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span id="pd-3">Nhu cầu dịch vụ</span></li>
+          </ul>
+
+          <hr>
+          <h4 id="priv-purpose">Mục Đích Sử Dụng</h4>
+          <ul>
+            <li><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg><span id="pp-1">Tư vấn và cung cấp dịch vụ</span></li>
+            <li><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg><span id="pp-2">Hỗ trợ khách hàng</span></li>
+            <li><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg><span id="pp-3">Thực hiện nghĩa vụ pháp lý</span></li>
+            <li><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg><span id="pp-4">Nâng cao chất lượng dịch vụ</span></li>
+          </ul>
+
+          <hr>
+          <h4 id="priv-rights">Quyền Của Khách Hàng</h4>
+          <ul>
+            <li><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span id="pr-1">Quyền truy cập và chỉnh sửa dữ liệu</span></li>
+            <li><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span id="pr-2">Quyền xóa dữ liệu</span></li>
+            <li><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span id="pr-3">Quyền phản đối xử lý dữ liệu</span></li>
+          </ul>
+        </div>
+
+        <div class="modal-content modal-terms" style="display:none">
+          <h2>ĐIỀU KHOẢN SỬ DỤNG DỊCH VỤ</h2>
+          <p><strong>CÔNG TY CHO THUÊ XE HOANG CAR</strong></p>
+
+          <h4>1. Giới thiệu</h4>
+          <p>Điều khoản sử dụng này quy định các quyền và nghĩa vụ giữa khách hàng và Công ty Hoang Car khi sử dụng dịch vụ cho thuê xe. Khi sử dụng dịch vụ, bạn đồng ý với tất cả các điều khoản này.</p>
+          <hr>
+
+          <h4>2. Điều kiện thuê xe</h4>
+          <ul>
+            <li>Khách hàng phải đủ 18 tuổi trở lên và có đầy đủ năng lực hành vi dân sự.</li>
+            <li>Có giấy tờ hợp lệ: CMND/CCCD hoặc hộ chiếu, giấy phép lái xe phù hợp.</li>
+            <li>Cung cấp thông tin chính xác khi đăng ký thuê xe.</li>
+          </ul>
+          <hr>
+
+          <h4>3. Quy định sử dụng xe</h4>
+          <ul>
+            <li>Sử dụng xe đúng mục đích, không vi phạm pháp luật.</li>
+            <li>Không cho thuê lại hoặc chuyển giao xe cho bên thứ ba khi chưa được sự đồng ý.</li>
+            <li>Không sử dụng xe vào các hoạt động trái pháp luật (đua xe, vận chuyển hàng cấm, v.v.).</li>
+            <li>Bảo quản xe cẩn thận trong suốt thời gian thuê.</li>
+          </ul>
+          <hr>
+
+          <h4>4. Thanh toán và đặt cọc</h4>
+          <ul>
+            <li>Khách hàng thanh toán theo bảng giá do Hoang Car công bố.</li>
+            <li>Có thể yêu cầu đặt cọc tùy loại xe.</li>
+            <li>Chi phí phát sinh (nhiên liệu, phí cầu đường, phạt vi phạm…) do khách hàng chịu trách nhiệm.</li>
+          </ul>
+          <hr>
+
+          <h4>5. Trách nhiệm khi xảy ra sự cố</h4>
+          <ul>
+            <li>Khách hàng phải thông báo ngay cho Hoang Car khi xảy ra tai nạn hoặc hư hỏng.</li>
+            <li>Chịu trách nhiệm bồi thường thiệt hại do lỗi của mình gây ra.</li>
+            <li>Không tự ý sửa chữa xe nếu chưa có sự đồng ý của công ty.</li>
+          </ul>
+          <hr>
+
+          <h4>6. Hủy và hoàn tiền</h4>
+          <ul>
+            <li>Việc hủy đặt xe phải thông báo trước theo quy định.</li>
+            <li>Phí hủy có thể áp dụng tùy thời điểm hủy.</li>
+            <li>Hoàn tiền (nếu có) sẽ được xử lý theo chính sách của công ty.</li>
+          </ul>
+          <hr>
+
+          <h4>7. Quyền của Hoang Car</h4>
+          <ul>
+            <li>Từ chối cung cấp dịch vụ nếu khách hàng không đáp ứng điều kiện.</li>
+            <li>Thu hồi xe nếu phát hiện vi phạm điều khoản.</li>
+            <li>Cập nhật, thay đổi điều khoản mà không cần thông báo trước.</li>
+          </ul>
+          <hr>
+
+          <h4>8. Bảo mật thông tin</h4>
+          <ul>
+            <li>Thông tin khách hàng được bảo mật và chỉ sử dụng cho mục đích cung cấp dịch vụ.</li>
+            <li>Không chia sẻ cho bên thứ ba nếu không có sự đồng ý (trừ trường hợp theo yêu cầu pháp luật).</li>
+          </ul>
+          <hr>
+
+          <h4>9. Điều khoản chung</h4>
+          <ul>
+            <li>Điều khoản này có hiệu lực kể từ ngày ban hành.</li>
+            <li>Mọi tranh chấp sẽ được giải quyết theo pháp luật Việt Nam.</li>
+          </ul>
+          <hr>
+
+          <h4>Liên hệ</h4>
+          <p>Công ty Hoang Car<br>Hotline: 0345678910<br>Email: hoang13516@gmail.com<br>Địa chỉ: 180 Cao Lỗ, P. Chánh Hưng, Tp. Hồ Chí Minh</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== FIXED UI ========== -->
+  <div id="app-fixed">
+    <button class="back-to-top" aria-label="Về đầu trang">
+      <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+    </button>
+
+    <a href="#contact" data-page="contact" class="fixed-consult-btn page-link" aria-label="Tư vấn ngay">TƯ VẤN NGAY!</a>
+  </div>
+
+  <!-- SCRIPTS: app-portable.js (NO fetch), script.js (functionality) -->
+  <script src="./js/app-portable.js" defer></script>
+  <script src="./js/script.js" defer></script>
+</body>
+</html>
