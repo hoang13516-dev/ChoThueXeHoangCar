@@ -1,4 +1,4 @@
-/* ===== App shell: load components & tab navigation ===== */
+/* ===== App shell: simplified for static deployment ===== */
 
 const PAGE_CONFIG = {
   home: ['home-hero.html', 'home-comparison.html', 'home-testimonials.html'],
@@ -27,38 +27,7 @@ const DEFAULT_PAGE = 'home';
 let currentPage = DEFAULT_PAGE;
 let animationObserver = null;
 
-async function fetchText(path) {
-  const res = await fetch(path);
-  if (!res.ok) throw new Error(`Failed to load ${path}`);
-  return res.text();
-}
-
-async function loadInto(selector, path) {
-  const el = document.querySelector(selector);
-  if (!el) return;
-  el.innerHTML = await fetchText(path);
-}
-
-async function buildPages() {
-  const main = document.getElementById('app-pages');
-  if (!main) return;
-
-  for (const [pageId, files] of Object.entries(PAGE_CONFIG)) {
-    const parts = await Promise.all(
-      files.map((f) => fetchText(`components/pages/${f}`))
-    );
-
-    const view = document.createElement('div');
-    view.className = 'page-view';
-    view.id = `page-${pageId}`;
-    view.dataset.page = pageId;
-    if (pageId !== 'home') view.classList.add('page-view--inner');
-    view.innerHTML = parts.join('\n');
-    view.setAttribute('aria-hidden', 'true');
-    main.appendChild(view);
-  }
-}
-
+// Simplified version - pages are already in DOM, no fetch needed
 function getPageFromHash() {
   const hash = (location.hash || '').replace('#', '');
   if (PAGE_CONFIG[hash]) return hash;
@@ -207,17 +176,9 @@ function bindGlobalKeys() {
   });
 }
 
-async function initApp() {
-  document.body.classList.add('is-loading');
+function initApp() {
   try {
-    await Promise.all([
-      loadInto('#app-header', 'components/header.html'),
-      buildPages(),
-      loadInto('#app-footer', 'components/footer.html'),
-      loadInto('#app-modals', 'components/modals.html'),
-      loadInto('#app-fixed', 'components/fixed-ui.html'),
-    ]);
-
+    // Pages are already in DOM for static deployment
     bindNavigation();
     bindMobileMenu();
     bindGlobalKeys();
@@ -231,12 +192,7 @@ async function initApp() {
     window.appReady = true;
     document.dispatchEvent(new Event('app:ready'));
   } catch (err) {
-    console.error('App load failed:', err);
-    const main = document.getElementById('app-pages');
-    if (main) {
-      main.innerHTML =
-        '<div class="app-error"><p><strong>Không tải được trang.</strong></p><p>Hãy chạy qua WAMP: <code>http://localhost/ChoThueXeHoangCar-master/</code></p></div>';
-    }
+    console.error('App init failed:', err);
   } finally {
     document.body.classList.remove('is-loading');
   }
